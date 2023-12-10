@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- font awosome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- custom css files -->
+    <link rel="stylesheet" href="./src/customcss/home.css">
+    <title>Iot</title>
+
+</head>
+<body>
+    <div class="container-fluid p-0 m-0">
+
+       <header class="main-header p-0 m-0 position-sticky top-0" style="z-index: 200;">
+        <nav class="navbar navbar-expand-lg bg-white ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                 <img src="https://img.icons8.com/nolan/48/warning-shield.png" width="30" class="logo"/>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">AboutUs</a>
+                  <a class="nav-link" href="#">Syllabus</a>
+                  <a class="nav-link" href="#">IoT Club</a>
+                  <a class="nav-link" href="#">Resources</a> 
+                </div>
+              </div>
+            </div>
+          </nav>
+       </header>
+<!-- carousel -->
+       <div>
+       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+         <div style="height: 92vh;background-color: black;opacity: 0.5; " id></div>
+            <!-- <img src="./assets/1.jpg" class="d-block" alt="..."> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+         <div style="height: 92vh;background-color: black;opacity: 0.5; "></div>
+            <!-- <img src="./assets/2.jpg" class="d-block" alt="..."> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <div style="height: 92vh;background-color: black;opacity: 0.5; "></div>
+            <!-- <img src="./assets/3.jpg" class="d-block"  alt="..."> -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="1500">
+            <div style="height: 92vh;background-color: black;opacity: 0.5; "></div>
+            <div class="carousel-caption">
+              <h5>Fourth slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+
+          <!-- <div class="carousel-item" data-bs-interval="1500">
+            <div class="card mb-3" style="width: 100%;height: 92vh;">
+              <div class="row g-0">
+                <div class="col-md-4" style="width: 60%; height:inherit;">
+                  <img src="./assets/4.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: 40%; height:inherit;">
+                  <div class="card-body d-flex flex-column align-items-center mt-lg-5">
+                     <h5 class="card-title">Card title</h5> 
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+        <!-- About Us -->
+        <div class="container">
+
+          <div class="text-center p-3 " id="aboutus-container">
+            <h2 id="aboutusHeading">About Us</h2>
+          </div>
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+  
+        </div>
+
+<!-- News Feed and Syllabus cards -->
+<div class="container-fluid p-4" style="height:67vh; box-sizing: border-box;">
+  <!-- tabs for news -->
+    <div class="row h-100 p-2">
+      <div class="col-4 overflow-y-scroll h-100 p-0" >
+        <ul class="nav nav-pills nav-fill position-sticky top-0 p-0 mb-3"  id="pills-tab" role="tablist">
+            
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="color: black;">Updates</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="true" style="color: black;">Events</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false" style="color: black;">Activities</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="bg-white p-3 pt-0 rounded box-shadow">
+            <div class="media text-muted">
+              
+              <a class="media-body pb-3 mb-0 small">
+              
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio.
+              </a>
+            </div>
+            <div class="media text-muted pt-3">
+              
+                <a class="media-body pb-3 mb-0">
+                
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio.
+                </a>
+              </div>
+              <div class="media text-muted pt-3">
+              
+                <a class="media-body pb-3 mb-0 small">
+                
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio.
+                </a>
+              </div>
+              <div class="media text-muted pt-3">
+              
+                <a class="media-body pb-3 mb-0 small">
+                
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio.
+                </a>
+              </div>
+              <div class="media text-muted pt-3">
+              
+                <a class="media-body pb-3 mb-0 small">
+                
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio.
+                </a>
+              </div>
+              <div class="media text-muted pt-3">
+              
+                <a class="media-body pb-3 mb-0 small">
+                
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio.
+                </a>
+              </div>
+              <div class="media text-muted pt-3">
+              
+                <a class="media-body pb-3 mb-0 small">
+                
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio.
+                </a>
+              </div>
+              
+
+
+            <div class="media text-muted pt-3">
+              
+              <a class="media-body pb-3 mb-0 small">
+              
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio. 
+              </a>
+            </div>
+            <div class="media text-muted pt-3">
+              
+              <a class="media-body pb-3 mb-0 small">
+              
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio. 
+              </a>
+            </div>
+            <div class="media text-muted pt-3">
+              
+              <a class="media-body pb-3 mb-0 small">
+              
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi quaerat ad rem quasi distinctio. 
+              </a>
+            </div>
+            <small class="d-block mt-3 ms-xl-4">
+              <a href="#">All messages</a>
+            </small>
+          </div></div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+          <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+        </div>
+      </div>
+
+      <!-- cards for display time table and syllubus -->
+     
+      <div class="col-8 " id="academiCards">
+        <div class="row row-cols-3 gy-4">
+
+          <div class="col">
+            <div class="card text-bg-dark" id="navCards1">
+              <i class="bi bi-person-fill"></i>
+           
+            <div class="card-img-overlay">
+              <h5 class="card-title">Syllabus</h5>
+            </div>
+          </div>
+          </div>
+          
+          <div class="col">
+            <div class="card text-bg-dark" id="navCards2">
+              <i class="bi bi-calendar-minus-fill"></i>
+           
+            <div class="card-img-overlay">
+              <h5 class="card-title">Time Table</h5>
+            </div>
+          </div>
+          </div>
+        <div class="col">
+          <div class="card text-bg-dark" id="navCards3">
+            <i class="bi bi-book-half"></i>
+         
+          <div class="card-img-overlay">
+           
+            <h5 class="card-title">Lab Manuals</h5>
+          </div>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card text-bg-dark" id="navCards4">
+            <i class="bi bi-youtube"></i>
+         
+          <div class="card-img-overlay">
+            <h5 class="card-title">Activities</h5>
+          </div>
+        </div>
+        </div>
+       <div class="col">
+        <div class="card col text-bg-dark" id="navCards5">
+          <i class="bi bi-unity"></i>
+       
+        <div class="card-img-overlay">
+          <h5 class="card-title">Dept of IoT</h5>
+        </div>
+      </div>
+       </div>
+        <div class="col">
+          <div class="card col text-bg-dark" id="navCards6">
+            <i class="bi bi-life-preserver"></i>
+         
+          <div class="card-img-overlay">
+            <h5 class="card-title">Web Dev</h5>
+          </div>
+        </div>
+        </div>
+        
+        </div>
+      
+      </div>
+
+  
+  </div>
+
+</div>
+    
+       <!--Iot Club Section  -->
+  <div class="container-fluid bg-primary p-lg-5" style="height: 92vh;" id="iotClubContainer">
+  <div class="container" id="iotContainerIntro">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, asperiores laboriosam? Cupiditate delectus reprehenderit architecto! Deserunt fugit modi molestias libero ducimus, ex amet veritatis corporis officia tenetur, facere sequi magni!</p>
+  </div>
+  <div class="container" id="iotContainerCards">
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/6.jpg" class="card-img-top h-100" alt="...">
+      
+      <div class="card-body border border-white  rounded-bottom-2 ">
+        <!-- <h5 class="card-title">Card title</h5> -->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button type="button" class="btn btn-light">
+         More About Project
+        </button>
+      </div>
+    </div>
+
+    <!-- 2 -->
+
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/6.jpg" class="card-img-top h-100" alt="...">
+      
+      <div class="card-body border border-white  rounded-bottom-2 ">
+        <!-- <h5 class="card-title">Card title</h5> -->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button type="button" class="btn btn-light">
+         More About Project
+        </button>
+      </div>
+    </div>
+    <!-- 3 -->
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/6.jpg" class="card-img-top h-100" alt="...">
+      
+      <div class="card-body border border-white  rounded-bottom-2 ">
+        <!-- <h5 class="card-title">Card title</h5> -->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button type="button" class="btn btn-light">
+         More About Project
+        </button>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/6.jpg" class="card-img-top h-100" alt="...">
+      
+      <div class="card-body border border-white  rounded-bottom-2 ">
+        <!-- <h5 class="card-title">Card title</h5> -->
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button type="button" class="btn btn-light">
+         More About Project
+        </button>
+      </div>
+    </div>
+    
+  </div>
+
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container-fluid bg-#ffffff p-lg-5" style="height: 92vh;" id="contactContainer">
+<h2 id="contactHeading">Contact</h2>
+<p id="contactIntro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, sapiente.</p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <div class="row row-cols-2 text-center">
+      <div class="col contactCards" ><div class="card">
+        <i class="bi bi-geo-alt fs-1"></i>
+        <div>
+          <h3>Address</h3>
+          <p>Near</p>
+          <p>My college</p>
+        </div>
+      </div></div>
+      <div class="col contactCards" ><div class="card">
+        <i class="bi bi-telephone fs-1"></i>
+        <div>
+          <h3>Call Us</h3>
+          <p>+123218944849</p>
+          <p>+47885599665</p>
+        </div>
+      </div></div>
+      <div class="col contactCards" ><div class="card">
+        <i class="bi bi-envelope fs-1"></i>
+        <div>
+          <h3>Email Us</h3>
+          <p>sriindu@gmail.com</p>
+          <p>deptofsriinduIot@gmail.com</p>
+        </div>
+      </div></div>
+      <div class="col contactCards" ><div class="card">
+        <i class="bi bi-clock fs-1"></i>
+        <div>
+          <h3>Open Hours</h3>
+          <p>Monday - Friday</p>
+          <p>9:00AM - 4:00PM</p>
+        </div>
+
+      </div></div>
+  </div>
+    </div>
+    <div class="col-6" ><div class="card formCard bg-rgb(33, 37, 41,0.03)">
+
+      <form class="contactForm p-4 pt-5">
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required="" >
+          </div>
+
+          <div class="col-md-6 ">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required="" >
+          </div>
+
+          <div class="col-md-12">
+            <input type="text" class="form-control" name="subject" placeholder="Subject" required="" >
+          </div>
+
+          <div class="col-md-12">
+            <textarea class="form-control border border-1 rounded-0" name="message" rows="6" placeholder="Message" required=""></textarea>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <!-- <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div> -->
+
+            <button type="submit" class="p-2 border rounded-1 btn btn-primary text-light" >Send Message</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+    
+  
+  </div>
+</div>
+  </div>
+
+  <!-- footer join our iot-club -->
+  <div class="footer-joinclub" style="height: 190px; padding: 40px; background: rgb(33, 37, 41,0.03);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="row col-lg-6 text-center">
+          <h2 class="fs-4">Join Our Iot Club</h2>
+          <p class="fs-6">We welcome everyone! come and join our club to share your knowledge</p>
+          <form action="" class="footer-form">
+            <input type="email" class="w-75 border border-0 p-3 rounded-5" name="" id="" placeholder="Enter Your Email">
+            <input type="submit" class="w-25 border border-0 btn btn-primary rounded-5 text-light" value="Join">
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer top -->
+  <div class="footer-top">
+    <div class="container text-black-50">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Arsha</h3>
+          <p class="mt-2">
+            A108 Adam Street <br>
+            New York, NY 535022<br>
+            United States <br><br>
+            <strong>Phone:</strong> +1 5589 55488 55<br>
+            <strong>Email:</strong> info@example.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i><a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul style="margin-left: 0;">
+            <li><i class="bi bi-chevron-right"></i><a href="#">Web Design</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#">Web Development</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#">Product Management</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#">Marketing</a></li>
+            <li><i class="bi bi-chevron-right"></i><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links mt-3">
+            <a href="#" class="twitter"></a>
+            <a href="#" class="facebook"></a>
+            <a href="#" class="instagram"></a>
+            <a href="#" class="google-plus"></a>
+            <a href="#" class="linkedin"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Footer bottom -->
+  <div class="container-fluid footer-bottom d-flex justify-content-between bg-primary p-3 text-light">
+    <div class="copyright">
+      © Copyright <strong><span>IoT team & Automac Tchnologies</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Developed by Automac Technologies
+      <!-- <a href="#"></a> -->
+    </div>
+  </div>
+</body>
+</html>
