@@ -42,7 +42,6 @@ margin: 0 15px 10px 0;
 }
 
 .card-title{
-    
     position: absolute;
     right:0;
     left: 0;
@@ -51,7 +50,6 @@ margin: 0 15px 10px 0;
 .card > i{
     font-size: 4rem;
     margin-top: 2rem;
-    
 }
 .media{
     padding: 0;
