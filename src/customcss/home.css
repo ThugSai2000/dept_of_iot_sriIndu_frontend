@@ -61,6 +61,33 @@ margin: 0 15px 10px 0;
 .media-body{
     text-decoration: none;
 }
+/* IoT club Container */
+#iotClubHeading{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+#iotClubHeading::before{
+content: "";
+width: 50px;
+height: 2px;
+background: var(--bs-primary);
+display: inline-block;
+margin: 0 15px 10px 0px;
+}
+#iotClubHeading::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background: var(--bs-primary);
+    display: inline-block;
+    margin: 0px 0px 10px 15px;
+}
+#contactIntro{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
 #iotContainerCards{
     display: flex;
     flex-direction: row;
@@ -68,7 +95,7 @@ margin: 0 15px 10px 0;
     align-items: center;
     justify-content: flex-start;
     column-gap: 2rem;
-    margin-top: 8rem;
+    margin-top: 2rem;
    
 }
 #iotContainerCards .card {
